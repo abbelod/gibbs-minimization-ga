@@ -18,15 +18,14 @@ This project calculates the equilibrium composition of a chemical system by mini
 
 ## Formula Used
 
-\[
-\frac{nG}{RT} = n_{\text{out}} \cdot \sum_i \left( Y_i \cdot \left(\frac{G_i}{RT} + \ln(P \cdot Y_i)\right) \right)
-\]
+The Gibbs free energy (non-dimensional) is minimized using:
+
+nG/RT = n_out × Σ [ Yi × (Gi/RT + ln(P × Yi)) ]
 
 Where:
-- \( Y_i = \frac{n_i}{n_{\text{out}}} \) (mole fraction)
-- \( G_i/RT \) is computed from NASA coefficients
-- \( P \) is pressure in bar
-
+- Yi = ni / n_out  → mole fraction of species i  
+- Gi/RT is calculated using NASA polynomials  
+- P is the pressure in bar
 ---
 
 ## Requirements
